@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don Jesus Restaurante | Authentic Mexican Cuisine in Pleasanton, TX</title>
+  <meta name="description" content="Don Jesus Restaurante serves authentic Mexican food in Pleasanton, TX. Enjoy enchiladas, fajitas, tacos, and more. Open daily at 1201 3rd St.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🌶️</span>
+        <span class="logo-text">Don Jesus</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-link btn-order">Order Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Welcome to</span>
+      <h1 class="hero-title">Don Jesus<br>Restaurante</h1>
+      <p class="hero-subtitle">Authentic Mexican Cuisine in the Heart of Pleasanton, TX</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="#contact" class="btn btn-outline">Find Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">4.5★</span>
+          <span class="stat-label">Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">154+</span>
+          <span class="stat-label">Reviews</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">1K+</span>
+          <span class="stat-label">Followers</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-img-placeholder">
+            <span class="about-emoji">🫔</span>
+          </div>
+          <div class="about-badge">
+            <span class="badge-text">Since<br>Established</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">A Taste of Mexico in Pleasanton</h2>
+          <p class="about-text">
+            Don Jesus Restaurante is a beloved destination for delicious Mexican food at reasonable prices. 
+            Our menu features a wide variety of traditional Mexican dishes crafted with fresh ingredients 
+            and authentic recipes passed down through generations.
+          </p>
+          <p class="about-text">
+            From sizzling fajitas and savory enchiladas to our famous huevos rancheros and fresh guacamole, 
+            every dish is prepared with love and care. We accommodate large groups, serve food quickly, 
+            and pride ourselves on great customer service.
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <span class="feature-icon">🌱</span>
+              <div>
+                <h4>Fresh Ingredients</h4>
+                <p>Carefully selected daily</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">👨‍🍳</span>
+              <div>
+                <h4>Talented Chefs</h4>
+                <p>Authentic Mexican recipes</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">👨‍👩‍👧‍👦</span>
+              <div>
+                <h4>Family Friendly</h4>
+                <p>Welcoming atmosphere for all</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🥗</span>
+              <div>
+                <h4>Vegan Options</h4>
+                <p>Vegetarian & vegan available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Menu</span>
+        <h2 class="section-title">Customer Favorites</h2>
+        <p class="section-desc">Explore our most loved dishes, prepared fresh with authentic Mexican flavors</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="favorites">Favorites</button>
+        <button class="menu-tab" data-tab="tacos">Tacos</button>
+        <button class="menu-tab" data-tab="burritos">Burritos</button>
+        <button class="menu-tab" data-tab="plates">Plates</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Favorites -->
+        <div class="menu-category" data-category="favorites">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🥩</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Beef Fajitas with Shrimp</h3>
+                <span class="menu-price">$18.99</span>
+              </div>
+              <p>Sizzling beef fajitas topped with grilled shrimp, served with rice, beans, and warm tortillas.</p>
+              <span class="menu-tag popular">Most Popular</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🍗</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Chicken Fajitas</h3>
+                <span class="menu-price">$14.99</span>
+              </div>
+              <p>Tender grilled chicken breast with sautéed peppers and onions, served with all the fixings.</p>
+              <span class="menu-tag">Favorite</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🫕</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Carne Guisada</h3>
+                <span class="menu-price">$13.99</span>
+              </div>
+              <p>Slow-cooked beef in rich, savory gravy. A comforting classic served with rice and beans.</p>
+              <span class="menu-tag">Signature</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🫔</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Enchiladas</h3>
+                <span class="menu-price">$12.99</span>
+              </div>
+              <p>Corn tortillas filled with your choice of meat, topped with red or green sauce and melted cheese.</p>
+              <span class="menu-tag">Classic</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌶️</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Chile Relleno</h3>
+                <span class="menu-price">$13.49</span>
+              </div>
+              <p>Roasted poblano pepper stuffed with cheese, battered and fried, topped with ranchero sauce.</p>
+              <span class="menu-tag">House Special</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🫘</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Charro Beans</h3>
+                <span class="menu-price">$4.99</span>
+              </div>
+              <p>Pinto beans slow-cooked with bacon, onion, cilantro, and jalapeño. A perfect side dish.</p>
+              <span class="menu-tag">Side</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tacos -->
+        <div class="menu-category hidden" data-category="tacos">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌮</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Los Tres Tacos</h3>
+                <span class="menu-price">$11.99</span>
+              </div>
+              <p>Three hard shell tacos with shredded chicken, ground beef, or pork. Topped with lettuce, tomatoes, and cheese.</p>
+              <span class="menu-tag popular">Popular</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🐟</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Cod Fish Tacos</h3>
+                <span class="menu-price">$13.99</span>
+              </div>
+              <p>Three soft flour tortillas filled with grilled cod fish, onions, and cilantro. Served with cilantro aioli.</p>
+              <span class="menu-tag">Chef's Pick</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌮</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Tacos Juanito</h3>
+                <span class="menu-price">$12.99</span>
+              </div>
+              <p>Three street-style tacos with soft corn tortillas, grilled chicken breast, and chorizo. Topped with onion and cilantro.</p>
+              <span class="menu-tag">House Favorite</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌮</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Crispy Tacos</h3>
+                <span class="menu-price">$10.99</span>
+              </div>
+              <p>Crunchy corn shells filled with seasoned meat, lettuce, tomato, and cheese. Served with rice and beans.</p>
+              <span class="menu-tag">Classic</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌮</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Tacos al Pastor</h3>
+                <span class="menu-price">$12.49</span>
+              </div>
+              <p>Marinated pork on soft corn tortillas with pineapple, onion, and fresh cilantro. A Mexican street food classic.</p>
+              <span class="menu-tag popular">Popular</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🥚</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Huevos Rancheros</h3>
+                <span class="menu-price">$9.99</span>
+              </div>
+              <p>Two eggs over easy on corn tortillas, topped with ranchero sauce. Served with rice, beans, and tortillas.</p>
+              <span class="menu-tag">Breakfast</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burritos -->
+        <div class="menu-category hidden" data-category="burritos">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌯</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Sombrero Burrito</h3>
+                <span class="menu-price">$13.99</span>
+              </div>
+              <p>Shredded chicken, ground beef, or pork stuffed with Mexican rice and refried beans. Topped with enchilada sauce, cheese, lettuce, pico de gallo, and sour cream.</p>
+              <span class="menu-tag popular">Signature</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌯</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Fajita Burrito</h3>
+                <span class="menu-price">$14.99</span>
+              </div>
+              <p>Grilled beef or chicken fajitas with peppers and onions, wrapped in a large flour tortilla with all the toppings.</p>
+              <span class="menu-tag">Favorite</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌯</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Chimichanga</h3>
+                <span class="menu-price">$14.49</span>
+              </div>
+              <p>Deep-fried burrito filled with your choice of chicken or beef, topped with queso, sour cream, and guacamole.</p>
+              <span class="menu-tag popular">Popular</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌯</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Bean & Cheese Burrito</h3>
+                <span class="menu-price">$8.99</span>
+              </div>
+              <p>Simple and satisfying — refried beans and melted cheese in a warm flour tortilla. Great for kids!</p>
+              <span class="menu-tag">Value</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🌯</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Breakfast Burrito</h3>
+                <span class="menu-price">$10.99</span>
+              </div>
+              <p>Scrambled eggs, bacon, potatoes, and cheese wrapped in a warm flour tortilla. Served with salsa.</p>
+              <span class="menu-tag">Breakfast</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🥑</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Guacamole</h3>
+                <span class="menu-price">$6.99</span>
+              </div>
+              <p>Fresh mashed avocado with lime, cilantro, onion, and tomato. Served with crispy tortilla chips.</p>
+              <span class="menu-tag">Appetizer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plates -->
+        <div class="menu-category hidden" data-category="plates">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🍽️</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Combo Plate</h3>
+                <span class="menu-price">$15.99</span>
+              </div>
+              <p>Choose any two items: enchilada, taco, tamale, chile relleno, or burrito. Served with rice and beans.</p>
+              <span class="menu-tag popular">Best Value</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🍳</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Breakfast Plate Special</h3>
+                <span class="menu-price">$9.99</span>
+              </div>
+              <p>Bacon and eggs served with Mexican rice, refried beans, and warm flour tortillas. Start your day right!</p>
+              <span class="menu-tag">Breakfast</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🥩</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Beef Steak Ranchero</h3>
+                <span class="menu-price">$16.99</span>
+              </div>
+              <p>Grilled beef steak topped with ranchero sauce, served with rice, beans, guacamole, and tortillas.</p>
+              <span class="menu-tag">Chef's Pick</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🦐</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Shrimp Fajitas</h3>
+                <span class="menu-price">$17.99</span>
+              </div>
+              <p>Grilled shrimp with sautéed peppers and onions, served sizzling with rice, beans, and tortillas.</p>
+              <span class="menu-tag">Seafood</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🫕</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Beef Caldo</h3>
+                <span class="menu-price">$12.99</span>
+              </div>
+              <p>Hearty beef soup with vegetables, potatoes, and corn. Served with rice and warm tortillas.</p>
+              <span class="menu-tag">Soup</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <span class="menu-emoji">🥞</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3>Eggs Mexican Style</h3>
+                <span class="menu-price">$9.49</span>
+              </div>
+              <p>Scrambled eggs with tomatoes, onions, and jalapeños. Served with rice, beans, and tortillas.</p>
+              <span class="menu-tag">Breakfast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"We make a special trip every time we're anywhere nearby to enjoy the excellent food and wonderful service at our favorite restaurant in South Texas! My go-to is the chimichanga with pollo guisado."</p>
+          <div class="review-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <span class="author-name">Satisfied Customer</span>
+              <span class="author-date">December 2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"I have been going for a long time and I've always had delicious food and excellent service. That's my place to go!"</p>
+          <div class="review-author">
+            <div class="author-avatar">L</div>
+            <div>
+              <span class="author-name">Loyal Customer</span>
+              <span class="author-date">December 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Friendly service in a clean establishment, everything we ordered was delicious! Best Mexican lunch we've ever had. Hot, fast, delicious!"</p>
+          <div class="review-author">
+            <div class="author-avatar">G</div>
+            <div>
+              <span class="author-name">Goana</span>
+              <span class="author-date">Google Review</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"You have got to visit this location. The food was amazing! It is a hidden gem. Amazing service. Amazing food at a reasonable price."</p>
+          <div class="review-author">
+            <div class="author-avatar">E</div>
+            <div>
+              <span class="author-name">Eunice</span>
+              <span class="author-date">Yelp Review</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Don Jesus Restaurante offers very authentic Mexican food. So delicious. I will definitely mark this restaurant as my favorite and recommend my friends to come."</p>
+          <div class="review-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <span class="author-name">Aggie</span>
+              <span class="author-date">Google Review</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card highlight">
+          <div class="review-rating-summary">
+            <span class="rating-big">4.5</span>
+            <div class="rating-stars">★★★★★</div>
+            <span class="rating-count">154 ratings</span>
+          </div>
+          <div class="rating-breakdown">
+            <div class="rating-bar"><span>Food</span><div class="bar"><div class="bar-fill" style="width: 90%"></div></div><span>4.5</span></div>
+            <div class="rating-bar"><span>Service</span><div class="bar"><div class="bar-fill" style="width: 92%"></div></div><span>4.6</span></div>
+            <div class="rating-bar"><span>Atmosphere</span><div class="bar"><div class="bar-fill" style="width: 86%"></div></div><span>4.3</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gallery</span>
+        <h2 class="section-title">A Glimpse of Don Jesus</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <div class="gallery-placeholder">
+            <span class="gallery-emoji">🌮</span>
+            <span class="gallery-label">Fresh Tacos</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span class="gallery-emoji">🥩</span>
+            <span class="gallery-label">Sizzling Fajitas</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span class="gallery-emoji">🫔</span>
+            <span class="gallery-label">Enchiladas</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span class="gallery-emoji">🥑</span>
+            <span class="gallery-label">Fresh Guacamole</span>
+          </div>
+        </div>
+        <div class="gallery-item large">
+          <div class="gallery-placeholder">
+            <span class="gallery-emoji">🌯</span>
+            <span class="gallery-label">Burritos</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span class="gallery-emoji">🌶️</span>
+            <span class="gallery-label">Chile Relleno</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span class="gallery-emoji">🍳</span>
+            <span class="gallery-label">Breakfast Plates</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <span class="gallery-emoji">🫘</span>
+            <span class="gallery-label">Charro Beans</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">Visit Us</span>
+          <h2 class="section-title">Come Dine With Us</h2>
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>1201 3rd St<br>Pleasanton, TX 78064</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+18305693963">(830) 569-3963</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@donjesus.top">info@donjesus.top</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="hours-card">
+            <h4>🕐 Hours of Operation</h4>
+            <div class="hours-grid">
+              <div class="hours-row">
+                <span>Monday</span>
+                <span>6:00 AM – 9:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span>Tuesday</span>
+                <span>6:00 AM – 2:45 PM</span>
+              </div>
+              <div class="hours-row">
+                <span>Wednesday</span>
+                <span>6:00 AM – 9:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span>Thursday</span>
+                <span>6:00 AM – 9:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span>Friday</span>
+                <span>6:00 AM – 9:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span>Saturday</span>
+                <span>6:00 AM – 9:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span>Sunday</span>
+                <span>6:00 AM – 2:45 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <div class="map-placeholder">
+            <div class="map-content">
+              <span class="map-emoji">📍</span>
+              <h3>Don Jesus Restaurante</h3>
+              <p>1201 3rd St, Pleasanton, TX 78064</p>
+              <a href="https://maps.google.com/?q=1201+3rd+St+Pleasanton+TX+78064" target="_blank" rel="noopener" class="btn btn-primary">Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Experience Authentic Mexican Cuisine?</h2>
+        <p>Visit us today or call to place your order. We can't wait to serve you!</p>
+        <div class="cta-buttons">
+          <a href="tel:+18305693963" class="btn btn-primary btn-lg">📞 Call (830) 569-3963</a>
+          <a href="https://maps.google.com/?q=1201+3rd+St+Pleasanton+TX+78064" target="_blank" rel="noopener" class="btn btn-outline btn-lg">📍 Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">🌶️</span>
+          <span class="logo-text">Don Jesus Restaurante</span>
+          <p>Authentic Mexican cuisine in the heart of Pleasanton, TX. Fresh ingredients, traditional recipes, and a welcoming atmosphere.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📍 1201 3rd St, Pleasanton, TX 78064</p>
+          <p>📞 <a href="tel:+18305693963">(830) 569-3963</a></p>
+          <p>✉️ <a href="mailto:info@donjesus.top">info@donjesus.top</a></p>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <a href="https://www.facebook.com/p/Don-Jesus-100043676028030/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Don Jesus Restaurante. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
